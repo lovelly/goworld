@@ -19,8 +19,8 @@ type redisEntityStorage struct {
 }
 
 // OpenRedis opens redis as entity storage
-func OpenRedis(url string, dbindex int) (storagecommon.EntityStorage, error) {
-	c, err := redis.DialURL(url)
+func OpenRedis(url, password string, dbindex int) (storagecommon.EntityStorage, error) {
+	c, err := redis.DialURL(url, redis.DialPassword(password))
 	if err != nil {
 		return nil, errors.Wrap(err, "redis dail failed")
 	}
