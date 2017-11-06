@@ -3,7 +3,7 @@ package netutil
 import (
 	"bufio"
 
-	"github.com/xiaonanln/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/consts"
 )
 
 // BufferedConnection provides buffered write to connections

@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/natefinch/lumberjack"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwlog"
 	"golang.org/x/net/websocket"
 )
 

@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwlog"
 	"github.com/xiaonanln/typeconv"
 )
 

@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/xiaonanln/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/config"
 )
 
 func reload(serverId ServerID) {

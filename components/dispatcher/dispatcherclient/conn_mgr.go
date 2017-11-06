@@ -10,13 +10,13 @@ import (
 	"net"
 
 	"github.com/pkg/errors"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwioutil"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/gwutils"
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/proto"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwutils"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/proto"
 )
 
 const (

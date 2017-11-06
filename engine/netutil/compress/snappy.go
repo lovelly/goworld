@@ -6,7 +6,7 @@ import (
 	"bytes"
 
 	"github.com/golang/snappy"
-	"github.com/xiaonanln/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwioutil"
 )
 
 func NewSnappyCompressor() Compressor {

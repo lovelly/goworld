@@ -11,11 +11,11 @@ import (
 	"os"
 
 	"github.com/xiaonanln/goTimer"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/post"
-	"github.com/xiaonanln/goworld/ext/msgbox"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/post"
+	"github.com/lovelly/goworld/ext/msgbox"
 	"github.com/xiaonanln/typeconv"
 )
 

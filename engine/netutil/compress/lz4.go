@@ -6,7 +6,7 @@ import (
 	"bytes"
 
 	"github.com/pierrec/lz4"
-	"github.com/xiaonanln/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwioutil"
 )
 
 func NewLz4Compressor() Compressor {

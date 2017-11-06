@@ -9,8 +9,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 // Encode returns the encoded form of src. The returned slice may be a sub-

@@ -6,7 +6,7 @@ import (
 
 	"time"
 
-	"github.com/xiaonanln/goworld/engine/post"
+	"github.com/lovelly/goworld/engine/post"
 )
 
 func TestNewAsyncJob(t *testing.T) {

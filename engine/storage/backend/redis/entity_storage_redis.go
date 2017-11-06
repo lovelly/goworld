@@ -5,9 +5,9 @@ import (
 
 	"github.com/garyburd/redigo/redis"
 	"github.com/pkg/errors"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/storage/storage_common"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/storage/storage_common"
 )
 
 var (

@@ -1,12 +1,12 @@
 package goworld
 
 import (
-	"github.com/xiaonanln/goworld/components/game"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/kvdb"
-	"github.com/xiaonanln/goworld/engine/post"
-	"github.com/xiaonanln/goworld/engine/storage"
+	"github.com/lovelly/goworld/components/game"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/kvdb"
+	"github.com/lovelly/goworld/engine/post"
+	"github.com/lovelly/goworld/engine/storage"
 )
 
 // Run runs the server endless loop

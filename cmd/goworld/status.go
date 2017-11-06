@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/keybase/go-ps"
-	"github.com/xiaonanln/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/config"
 )
 
 type ServerStatus struct {

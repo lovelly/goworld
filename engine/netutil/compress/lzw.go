@@ -5,7 +5,7 @@ import (
 
 	"compress/lzw"
 
-	"github.com/xiaonanln/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwioutil"
 )
 
 func NewLzwCompressor() Compressor {

@@ -9,7 +9,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/xiaonanln/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwioutil"
 )
 
 func NewZlibCompressor() Compressor {

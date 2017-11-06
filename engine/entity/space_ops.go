@@ -1,6 +1,6 @@
 package entity
 
-import "github.com/xiaonanln/goworld/engine/common"
+import "github.com/lovelly/goworld/engine/common"
 
 // CreateSpaceLocally creates a space in the local game server
 func CreateSpaceLocally(kind int) common.EntityID {

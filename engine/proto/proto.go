@@ -3,8 +3,8 @@ package proto
 import (
 	"unsafe"
 
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 // MsgType is the type of message types

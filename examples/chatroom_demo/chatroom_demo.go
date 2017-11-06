@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/xiaonanln/goworld"
-	"github.com/xiaonanln/goworld/components/game"
+	"github.com/lovelly/goworld/components/game"
 )
 
 // serverDelegate 定义一些游戏服务器的回调函数

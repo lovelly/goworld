@@ -1,6 +1,6 @@
 package game
 
-import "github.com/xiaonanln/goworld/engine/gwlog"
+import "github.com/lovelly/goworld/engine/gwlog"
 
 // IGameDelegate defines interfaces for handling game server events
 type IGameDelegate interface {

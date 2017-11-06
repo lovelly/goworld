@@ -19,16 +19,16 @@ import (
 
 	"fmt"
 
-	"github.com/xiaonanln/goworld/components/dispatcher/dispatcherclient"
-	"github.com/xiaonanln/goworld/engine/binutil"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/crontab"
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/kvdb"
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/proto"
-	"github.com/xiaonanln/goworld/engine/storage"
+	"github.com/lovelly/goworld/components/dispatcher/dispatcherclient"
+	"github.com/lovelly/goworld/engine/binutil"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/crontab"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/kvdb"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/proto"
+	"github.com/lovelly/goworld/engine/storage"
 )
 
 var (

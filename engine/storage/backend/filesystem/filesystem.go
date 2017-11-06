@@ -12,10 +12,10 @@ import (
 
 	"strings"
 
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/storage/storage_common"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/storage/storage_common"
 )
 
 // FileSystemEntityStorage is an implementation of Entity Storage using filesystem

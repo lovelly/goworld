@@ -1,6 +1,6 @@
 package entity
 
-import "github.com/xiaonanln/goworld/engine/gwlog"
+import "github.com/lovelly/goworld/engine/gwlog"
 
 // ListAttr is a attribute for a list of attributes
 type ListAttr struct {

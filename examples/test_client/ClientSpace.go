@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/xiaonanln/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/common"
 	"github.com/xiaonanln/typeconv"
 )
 

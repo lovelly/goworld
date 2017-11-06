@@ -10,7 +10,7 @@ import (
 	"os"
 
 	"github.com/bmizerany/assert"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 func init() {

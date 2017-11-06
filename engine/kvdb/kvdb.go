@@ -7,13 +7,13 @@ import (
 
 	"strconv"
 
-	"github.com/xiaonanln/goworld/engine/async"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/kvdb/backend/kvdb_mongodb"
-	"github.com/xiaonanln/goworld/engine/kvdb/backend/kvdbmysql"
-	"github.com/xiaonanln/goworld/engine/kvdb/backend/kvdbredis"
-	"github.com/xiaonanln/goworld/engine/kvdb/types"
+	"github.com/lovelly/goworld/engine/async"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/kvdb/backend/kvdb_mongodb"
+	"github.com/lovelly/goworld/engine/kvdb/backend/kvdbmysql"
+	"github.com/lovelly/goworld/engine/kvdb/backend/kvdbredis"
+	"github.com/lovelly/goworld/engine/kvdb/types"
 )
 
 const (
