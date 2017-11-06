@@ -99,6 +99,7 @@ type StorageConfig struct {
 	Type      string // Type of storage (filesystem, mongodb, redis, mysql)
 	Directory string // Directory of filesystem storage (filesystem)
 	Url       string // Connection URL (mongodb, redis, mysql)
+	RedisPwd  string
 	DB        string // Database name (mongodb, redis)
 	Driver    string // SQL Driver name (mysql)
 }
@@ -431,8 +432,10 @@ func readStorageConfig(sec *ini.Section, config *StorageConfig) {
 			config.DB = key.MustString(config.DB)
 		} else if name == "driver" {
 			config.Driver = key.MustString(config.Driver)
+		} else if name == "redispwd" {
+			config.RedisPwd = key.MustString(config.RedisPwd)
 		} else {
-			gwlog.Panicf("section %s has unknown key: %s", sec.Name(), key.Name())
+			gwlog.Panicf("section %s has unknown key: %s , %s", sec.Name(), key.Name(), name)
 		}
 	}
 
