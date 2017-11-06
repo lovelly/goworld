@@ -3,8 +3,8 @@ package post
 import (
 	"sync"
 
-	//"github.com/xiaonanln/goworld/gwlog"
-	"github.com/xiaonanln/goworld/engine/gwutils"
+	//"github.com/lovelly/goworld/gwlog"
+	"github.com/lovelly/goworld/engine/gwutils"
 )
 
 // PostCallback is the type of functions to be posted

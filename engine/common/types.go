@@ -1,8 +1,8 @@
 package common
 
 import (
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/uuid"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/uuid"
 )
 
 // ENTITYID_LENGTH is the length of Entity IDs

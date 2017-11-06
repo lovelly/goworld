@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/consts"
 )
 
 func start(sid ServerID) {

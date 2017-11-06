@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 // Monster type

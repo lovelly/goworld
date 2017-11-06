@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/xiaonanln/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/config"
 )
 
 // Env represents environment variables
@@ -55,7 +55,7 @@ func detectGoWorldPath() {
 	searchPaths := getGoSearchPaths()
 	showMsg("go search paths: %s", strings.Join(searchPaths, string(os.PathListSeparator)))
 	for _, sp := range searchPaths {
-		goworldPath := filepath.Join(sp, "src", "github.com", "xiaonanln", "goworld")
+		goworldPath := filepath.Join(sp, "src", "github.com", "lovelly", "goworld")
 		if isdir(goworldPath) {
 			env.GoWorldRoot = goworldPath
 			break

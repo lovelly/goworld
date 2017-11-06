@@ -6,13 +6,13 @@ import (
 	"strconv"
 
 	"github.com/xiaonanln/goworld"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/gwutils"
-	"github.com/xiaonanln/goworld/engine/kvdb"
-	"github.com/xiaonanln/goworld/engine/kvdb/types"
-	"github.com/xiaonanln/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwutils"
+	"github.com/lovelly/goworld/engine/kvdb"
+	"github.com/lovelly/goworld/engine/kvdb/types"
+	"github.com/lovelly/goworld/engine/netutil"
 )
 
 // msgbox is a reliable message box for entities

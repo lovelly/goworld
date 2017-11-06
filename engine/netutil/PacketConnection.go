@@ -13,11 +13,11 @@ import (
 	"sync/atomic"
 
 	"github.com/pkg/errors"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwioutil"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/netutil/compress"
-	"github.com/xiaonanln/goworld/engine/opmon"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/netutil/compress"
+	"github.com/lovelly/goworld/engine/opmon"
 )
 
 const (

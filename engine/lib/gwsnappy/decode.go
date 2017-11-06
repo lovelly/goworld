@@ -13,7 +13,7 @@ import (
 
 	"time"
 
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 var (

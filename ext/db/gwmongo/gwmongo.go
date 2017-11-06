@@ -2,8 +2,8 @@ package gwmongo
 
 import (
 	"github.com/pkg/errors"
-	"github.com/xiaonanln/goworld/engine/async"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/async"
+	"github.com/lovelly/goworld/engine/gwlog"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

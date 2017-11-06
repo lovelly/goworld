@@ -1,6 +1,6 @@
 package main
 
-import "github.com/xiaonanln/goworld/engine/entity"
+import "github.com/lovelly/goworld/engine/entity"
 
 // Monster type
 type Monster struct {

@@ -12,13 +12,13 @@ import (
 	"sync/atomic"
 
 	"github.com/xiaonanln/go-xnsyncutil/xnsyncutil"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/entity"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/proto"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/entity"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/proto"
 )
 
 type callQueueItem struct {

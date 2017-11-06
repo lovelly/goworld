@@ -5,8 +5,8 @@ import (
 
 	"os"
 
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/gwlog"
 	"github.com/xiaonanln/typeconv"
 )
 

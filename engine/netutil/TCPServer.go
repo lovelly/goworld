@@ -6,9 +6,9 @@ import (
 
 	"os"
 
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwioutil"
-	"github.com/xiaonanln/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/gwlog"
 )
 
 const (

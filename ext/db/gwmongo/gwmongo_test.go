@@ -7,7 +7,7 @@ import (
 
 	"sync"
 
-	"github.com/xiaonanln/goworld/engine/post"
+	"github.com/lovelly/goworld/engine/post"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

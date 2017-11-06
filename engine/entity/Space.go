@@ -3,10 +3,10 @@ package entity
 import (
 	"fmt"
 
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/gwutils"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwutils"
 )
 
 const (

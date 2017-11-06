@@ -5,8 +5,8 @@ import (
 
 	"bytes"
 
-	"github.com/xiaonanln/goworld/engine/gwioutil"
-	"github.com/xiaonanln/goworld/engine/lib/gwsnappy"
+	"github.com/lovelly/goworld/engine/gwioutil"
+	"github.com/lovelly/goworld/engine/lib/gwsnappy"
 )
 
 // NewGWSnappyCompressor creates a new Compressor in gwsnappy format

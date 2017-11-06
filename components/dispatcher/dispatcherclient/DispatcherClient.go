@@ -5,8 +5,8 @@ import (
 
 	"time"
 
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/proto"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/proto"
 )
 
 // DispatcherClient is a client connection to the dispatcher

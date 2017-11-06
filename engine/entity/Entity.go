@@ -10,16 +10,16 @@ import (
 
 	"unsafe"
 
-	"github.com/xiaonanln/goworld/components/dispatcher/dispatcherclient"
-	"github.com/xiaonanln/goworld/engine/common"
-	"github.com/xiaonanln/goworld/engine/config"
-	"github.com/xiaonanln/goworld/engine/consts"
-	"github.com/xiaonanln/goworld/engine/gwlog"
-	"github.com/xiaonanln/goworld/engine/gwutils"
-	"github.com/xiaonanln/goworld/engine/netutil"
-	"github.com/xiaonanln/goworld/engine/post"
-	"github.com/xiaonanln/goworld/engine/proto"
-	"github.com/xiaonanln/goworld/engine/storage"
+	"github.com/lovelly/goworld/components/dispatcher/dispatcherclient"
+	"github.com/lovelly/goworld/engine/common"
+	"github.com/lovelly/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/consts"
+	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/lovelly/goworld/engine/gwutils"
+	"github.com/lovelly/goworld/engine/netutil"
+	"github.com/lovelly/goworld/engine/post"
+	"github.com/lovelly/goworld/engine/proto"
+	"github.com/lovelly/goworld/engine/storage"
 	"github.com/xiaonanln/typeconv"
 )
 

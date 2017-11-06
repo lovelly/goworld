@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/keybase/go-ps"
-	"github.com/xiaonanln/goworld/engine/config"
+	"github.com/lovelly/goworld/engine/config"
 )
 
 // ServerStatus represents the status of a server
