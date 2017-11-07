@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/natefinch/lumberjack"
 	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/natefinch/lumberjack"
 	"golang.org/x/net/websocket"
 )
 
@@ -75,7 +75,7 @@ func SetupGWLog(component string, logLevel string, logFile string, logStderr boo
 	}
 
 	if logStderr {
-		outputWriters = append(outputWriters, os.Stderr)
+		outputWriters = append(outputWriters, os.Stdout)
 	}
 
 	if len(outputWriters) == 1 {

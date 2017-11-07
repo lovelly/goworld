@@ -5,6 +5,8 @@ import (
 
 	"regexp"
 
+	"runtime/debug"
+
 	"github.com/lovelly/goworld/engine/common"
 	"github.com/lovelly/goworld/engine/entity"
 	"github.com/lovelly/goworld/engine/gwlog"
@@ -37,6 +39,7 @@ var spaceSep *regexp.Regexp = regexp.MustCompile("\\s")
 
 // SendChat_Client 是用来发送聊天信息的客户端RPC
 func (a *Avatar) SendChat_Client(text string) {
+	debug.PrintStack()
 	text = strings.TrimSpace(text)
 	if text[0] == '/' {
 		// this is a command

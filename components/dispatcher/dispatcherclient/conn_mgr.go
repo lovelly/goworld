@@ -9,7 +9,6 @@ import (
 
 	"net"
 
-	"github.com/pkg/errors"
 	"github.com/lovelly/goworld/engine/config"
 	"github.com/lovelly/goworld/engine/consts"
 	"github.com/lovelly/goworld/engine/gwioutil"
@@ -17,6 +16,7 @@ import (
 	"github.com/lovelly/goworld/engine/gwutils"
 	"github.com/lovelly/goworld/engine/netutil"
 	"github.com/lovelly/goworld/engine/proto"
+	"github.com/pkg/errors"
 )
 
 const (
