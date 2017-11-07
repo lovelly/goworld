@@ -43,7 +43,6 @@ func startDispatcher() {
 }
 
 func startGames(serverId ServerID, isRestore bool) {
-	showMsg("start games ...")
 	gameIds := config.GetGameIDs()
 	showMsg("game ids: %v", gameIds)
 	for _, gameid := range gameIds {
@@ -52,7 +51,7 @@ func startGames(serverId ServerID, isRestore bool) {
 }
 
 func startGame(serverId ServerID, gameid uint16, isRestore bool) {
-	showMsg("start game %d ...", gameid)
+	showMsg("start serverId:%s gameId: %d ...",serverId, gameid)
 
 	gameExePath := filepath.Join(serverId.Path(), serverId.Name()+ExecutiveExt)
 	args := []string{"-gid", strconv.Itoa(int(gameid))}

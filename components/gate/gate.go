@@ -42,10 +42,11 @@ func init() {
 
 func parseArgs() {
 	var gateIdArg int
-	flag.IntVar(&gateIdArg, "gid", 0, "set gateid")
+	flag.IntVar(&gateIdArg, "gid", 1, "set gateid")
 	flag.StringVar(&configFile, "configfile", "", "set config file path")
 	flag.StringVar(&logLevel, "log", "", "set log level, will override log level in config")
 	flag.Parse()
+	fmt.Println("gid == ", gateIdArg)
 	gateid = uint16(gateIdArg)
 }
 
@@ -56,6 +57,7 @@ func main() {
 		config.SetConfigFile(configFile)
 	}
 
+	fmt.Println("gateid ;", gateid)
 	gateConfig := config.GetGate(gateid)
 	if gateConfig.GoMaxProcs > 0 {
 		gwlog.Infof("SET GOMAXPROCS = %d", gateConfig.GoMaxProcs)

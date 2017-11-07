@@ -9,7 +9,8 @@ import (
 	"strings"
 	"sync"
 	"time"
-
+	"log"
+	"runtime"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
@@ -56,10 +57,10 @@ type TextFormatter struct {
 
 	// QuoteEmptyFields will wrap empty fields in quotes if true
 	QuoteEmptyFields bool
-
+	Flag int
+	Calldepth int
 	// Whether the logger's out is to a terminal
 	isTerminal bool
-
 	sync.Once
 }
 
@@ -77,6 +78,22 @@ func (f *TextFormatter) checkIfTerminal(w io.Writer) bool {
 		return false
 	}
 }
+
+
+func  (f *TextFormatter)Caller ()(file string){
+	var iline int
+	if f.Flag&(log.Lshortfile|log.Llongfile) != 0 {
+		// Release lock while getting caller info - it's expensive.
+		var ok bool
+		_, file, iline, ok = runtime.Caller(f.Calldepth)
+		if !ok {
+			file = "???"
+			iline = 0
+		}
+	}
+	return fmt.Sprintf(file +":%d ",iline)
+}
+
 
 // Format renders a single log entry
 func (f *TextFormatter) Format(entry *Entry) ([]byte, error) {
@@ -108,6 +125,10 @@ func (f *TextFormatter) Format(entry *Entry) ([]byte, error) {
 	if isColored {
 		f.printColored(b, entry, keys, timestampFormat)
 	} else {
+		if f.Flag&(log.Lshortfile|log.Llongfile) != 0 {
+			f.appendKeyValue(b, "",f.Caller())
+		}
+
 		if !f.DisableTimestamp {
 			f.appendKeyValue(b, "time", entry.Time.Format(timestampFormat))
 		}
@@ -172,9 +193,19 @@ func (f *TextFormatter) appendKeyValue(b *bytes.Buffer, key string, value interf
 	if b.Len() > 0 {
 		b.WriteByte(' ')
 	}
-	b.WriteString(key)
-	b.WriteByte('=')
-	f.appendValue(b, value)
+
+	if key == ""{
+		stringVal, ok := value.(string)
+		if !ok {
+			stringVal = fmt.Sprint(value)
+		}
+		b.WriteString(stringVal)
+	}else{
+		b.WriteString(key)
+		b.WriteByte('=')
+		f.appendValue(b, value)
+	}
+
 }
 
 func (f *TextFormatter) appendValue(b *bytes.Buffer, value interface{}) {

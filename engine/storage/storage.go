@@ -125,7 +125,7 @@ func Shutdown() {
 func Initialize() {
 	err := assureStorageEngineReady()
 	if err != nil {
-		gwlog.Fatalf("Storage engine is not ready: %s", err)
+		gwlog.Fatalf("Storage engine is not ready1: %s", err)
 	}
 	go storageRoutine()
 }
@@ -180,7 +180,7 @@ func storageRoutine() {
 	for {
 		err := assureStorageEngineReady()
 		if err != nil {
-			gwlog.Errorf("Storage engine is not ready: %s", err)
+			gwlog.Errorf("Storage engine is not ready2: %s", err)
 			time.Sleep(time.Second)
 			continue
 		}
@@ -200,7 +200,7 @@ func storageRoutine() {
 				}
 				err := assureStorageEngineReady()
 				if err != nil {
-					gwlog.Errorf("Storage engine is not ready: %s", err)
+					gwlog.Errorf("Storage engine is not ready3: %s", err)
 					time.Sleep(time.Second) // wait for 1 second to retry
 					continue
 				}

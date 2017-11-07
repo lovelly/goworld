@@ -12,7 +12,6 @@ var (
 func StandardLogger() *Logger {
 	return std
 }
-
 // SetOutput sets the standard logger output.
 func SetOutput(out io.Writer) {
 	std.mu.Lock()

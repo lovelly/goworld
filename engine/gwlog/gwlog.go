@@ -11,6 +11,8 @@ import (
 
 	sublog "github.com/Sirupsen/logrus"
 	"github.com/pkg/errors"
+	"log"
+	"fmt"
 )
 
 var (
@@ -28,15 +30,6 @@ var (
 	PanicLevel Level = Level(sublog.PanicLevel)
 	// FatalLevel level
 	FatalLevel Level = Level(sublog.FatalLevel)
-
-	// Debugf logs formatted debug message
-	Debugf logFormatFunc
-	// Infof logs formatted info message
-	Infof logFormatFunc
-	// Warnf logs formatted warn message
-	Warnf logFormatFunc
-	// Errorf logs formatted error message
-	Errorf logFormatFunc
 )
 
 type logFormatFunc func(format string, args ...interface{})
@@ -45,25 +38,21 @@ type logFormatFunc func(format string, args ...interface{})
 type Level uint8
 
 func init() {
+	fmt.Println("111111111")
 	outputWriter = os.Stderr
 	sublog.SetOutput(outputWriter)
 	sublog.SetLevel(sublog.DebugLevel)
-	sublog.SetFormatter(&sublog.TextFormatter{FullTimestamp: true, TimestampFormat: "2006-01-02T15:04:05.000000000"})
-
-	Debugf = sublog.Debugf
-	Infof = sublog.Infof
-	Warnf = sublog.Warnf
-	Errorf = sublog.Errorf
+	sublog.SetFormatter(&sublog.TextFormatter{FullTimestamp: true, TimestampFormat: "2006-01-02T15:04:05.000000000", Calldepth:8,Flag:log.Llongfile})
 }
 
 // SetSource sets the component name (dispatcher/gate/game) of gwlog module
 func SetSource(comp string) {
-	logEntry := sublog.WithField("source", comp)
-
-	Debugf = logEntry.Debugf
-	Infof = logEntry.Infof
-	Warnf = logEntry.Warnf
-	Errorf = logEntry.Errorf
+	//logEntry := sublog.WithField("source", comp)
+	//
+	//Debugf = logEntry.Debugf
+	//Infof = logEntry.Infof
+	//Warnf = logEntry.Warnf
+	//Errorf = logEntry.Errorf
 }
 
 // ParseLevel parses log level string to Level
@@ -82,6 +71,24 @@ func TraceError(format string, args ...interface{}) {
 	outputWriter.Write(debug.Stack())
 	Errorf(format, args...)
 }
+
+func Debugf(format string, args ...interface{}) {
+	sublog.Debugf(format, args...)
+}
+
+func Infof(format string, args ...interface{}) {
+	sublog.Infof(format, args...)
+}
+
+func Warnf(format string, args ...interface{}) {
+	sublog.Warnf(format, args...)
+}
+
+func Errorf(format string, args ...interface{}) {
+	sublog.Errorf(format, args...)
+}
+
+
 
 // Fatalf prints formatted fatal message
 func Fatalf(format string, args ...interface{}) {
