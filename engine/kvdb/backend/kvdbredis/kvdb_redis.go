@@ -27,8 +27,8 @@ func (ki keyTreeItem) Less(_other btree.Item) bool {
 }
 
 // OpenRedisKVDB opens Redis for KVDB backend
-func OpenRedisKVDB(url string, dbindex int) (kvdbtypes.KVDBEngine, error) {
-	c, err := redis.DialURL(url)
+func OpenRedisKVDB(url, passwd string, dbindex int) (kvdbtypes.KVDBEngine, error) {
+	c, err := redis.DialURL(url, redis.DialPassword(passwd))
 	if err != nil {
 		return nil, errors.Wrap(err, "redis dail failed")
 	}

@@ -147,7 +147,7 @@ func assureStorageEngineReady() (err error) {
 				return err
 			}
 		}
-		storageEngine, err = entitystorageredis.OpenRedis(cfg.Url, cfg.RedisPwd, dbindex)
+		storageEngine, err = entitystorageredis.OpenRedis(cfg.Url, cfg.PassWd, dbindex)
 	} else if cfg.Type == "sql" {
 		if cfg.Driver == "mysql" {
 			storageEngine, err = entitystoragemysql.OpenMySQL(cfg.Url)
