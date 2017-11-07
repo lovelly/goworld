@@ -39,7 +39,7 @@ type Level uint8
 
 func init() {
 	fmt.Println("111111111")
-	outputWriter = os.Stderr
+	outputWriter = os.Stdout
 	sublog.SetOutput(outputWriter)
 	sublog.SetLevel(sublog.DebugLevel)
 	sublog.SetFormatter(&sublog.TextFormatter{FullTimestamp: true, TimestampFormat: "2006-01-02T15:04:05.000000000", Calldepth:8,Flag:log.Llongfile})
