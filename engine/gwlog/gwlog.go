@@ -12,7 +12,6 @@ import (
 	sublog "github.com/Sirupsen/logrus"
 	"github.com/pkg/errors"
 	"log"
-	"fmt"
 )
 
 var (
@@ -38,7 +37,6 @@ type logFormatFunc func(format string, args ...interface{})
 type Level uint8
 
 func init() {
-	fmt.Println("111111111")
 	outputWriter = os.Stdout
 	sublog.SetOutput(outputWriter)
 	sublog.SetLevel(sublog.DebugLevel)
