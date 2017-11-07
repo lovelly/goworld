@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/xiaonanln/goworld"
+	"github.com/lovelly/goworld"
 	"github.com/lovelly/goworld/engine/common"
 	"github.com/lovelly/goworld/engine/entity"
 	"github.com/lovelly/goworld/engine/gwlog"

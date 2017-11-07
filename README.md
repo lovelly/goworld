@@ -1,7 +1,7 @@
 # GoWorld
 _**Scalable Distributed Game Server Engine with Hot Reload in Golang**_
 
-[![GoDoc](https://godoc.org/github.com/xiaonanln/goworld?status.png)](https://godoc.org/github.com/xiaonanln/goworld) [![Build Status](https://api.travis-ci.org/xiaonanln/goworld.svg?branch=master)](https://travis-ci.org/xiaonanln/goworld) [![Go Report Card](https://goreportcard.com/badge/github.com/xiaonanln/goworld)](https://goreportcard.com/report/github.com/xiaonanln/goworld) [![codecov](https://codecov.io/gh/xiaonanln/goworld/branch/master/graph/badge.svg)](https://codecov.io/gh/xiaonanln/goworld) [![ApacheLicense](https://img.shields.io/badge/license-APACHE%20License-blue.svg)](https://raw.githubusercontent.com/xiaonanln/goworld/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/lovelly/goworld?status.png)](https://godoc.org/github.com/lovelly/goworld) [![Build Status](https://api.travis-ci.org/xiaonanln/goworld.svg?branch=master)](https://travis-ci.org/xiaonanln/goworld) [![Go Report Card](https://goreportcard.com/badge/github.com/lovelly/goworld)](https://goreportcard.com/report/github.com/lovelly/goworld) [![codecov](https://codecov.io/gh/xiaonanln/goworld/branch/master/graph/badge.svg)](https://codecov.io/gh/xiaonanln/goworld) [![ApacheLicense](https://img.shields.io/badge/license-APACHE%20License-blue.svg)](https://raw.githubusercontent.com/xiaonanln/goworld/master/LICENSE)
 [![Join the chat at https://gitter.im/goworldgs/Lobby](https://badges.gitter.im/goworldgs/Lobby.svg)](https://gitter.im/goworldgs/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ---------------------------------------
@@ -117,7 +117,7 @@ goworld start examples/chatroom_demo
 **Chatroom Demo Client:**
 
 Chatroom demo client implements the client-server protocol in Javascript.  
-The client for chatroom demo is hosted at [github.com/xiaonanln/goworld-chatroom-demo-client](https://github.com/xiaonanln/goworld-chatroom-demo-client).
+The client for chatroom demo is hosted at [github.com/lovelly/goworld-chatroom-demo-client](https://github.com/lovelly/goworld-chatroom-demo-client).
 The project was created and built in [Cocos Creater 1.5](http://www.cocos2d-x.org/). A running server and client demo can also be found at [http://goworldgs.com/chatclient/](http://goworldgs.com/chatclient/).
 
 ### Unity Demo
@@ -147,5 +147,5 @@ goworld start examples/unity_demo
 **Unity Demo Client:**
 
 Unity demo client implements the client-server protocol in C#. 
-The client for unity demo is hosted at [https://github.com/xiaonanln/goworld-unity-demo](https://github.com/xiaonanln/goworld-unity-demo).
+The client for unity demo is hosted at [https://github.com/lovelly/goworld-unity-demo](https://github.com/lovelly/goworld-unity-demo).
 The project was created and built in [Unity 2017.1](https://unity3d.com/). 

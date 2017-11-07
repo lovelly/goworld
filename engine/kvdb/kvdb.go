@@ -66,7 +66,7 @@ func assureKVDBEngineReady() (err error) {
 				return err
 			}
 		}
-		kvdbEngine, err = kvdbredis.OpenRedisKVDB(kvdbCfg.Url, dbindex)
+		kvdbEngine, err = kvdbredis.OpenRedisKVDB(kvdbCfg.Url, kvdbCfg.PassWd, dbindex)
 	} else if kvdbCfg.Type == "sql" {
 		if kvdbCfg.Driver == "mysql" {
 			kvdbEngine, err = kvdbmysql.OpenMySQLKVDB(kvdbCfg.Url)

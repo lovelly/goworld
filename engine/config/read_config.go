@@ -99,7 +99,7 @@ type StorageConfig struct {
 	Type      string // Type of storage (filesystem, mongodb, redis, mysql)
 	Directory string // Directory of filesystem storage (filesystem)
 	Url       string // Connection URL (mongodb, redis, mysql)
-	RedisPwd  string
+	PassWd  string
 	DB        string // Database name (mongodb, redis)
 	Driver    string // SQL Driver name (mysql)
 }
@@ -108,6 +108,7 @@ type StorageConfig struct {
 type KVDBConfig struct {
 	Type       string
 	Url        string // MongoDB
+	PassWd 		string
 	DB         string // MongoDB
 	Collection string // MongoDB
 	Driver     string // SQL Driver: e.x. mysql
@@ -432,8 +433,8 @@ func readStorageConfig(sec *ini.Section, config *StorageConfig) {
 			config.DB = key.MustString(config.DB)
 		} else if name == "driver" {
 			config.Driver = key.MustString(config.Driver)
-		} else if name == "redispwd" {
-			config.RedisPwd = key.MustString(config.RedisPwd)
+		} else if name == "passwd" {
+			config.PassWd = key.MustString(config.PassWd)
 		} else {
 			gwlog.Panicf("section %s has unknown key: %s , %s", sec.Name(), key.Name(), name)
 		}
@@ -461,6 +462,8 @@ func readKVDBConfig(sec *ini.Section, config *KVDBConfig) {
 			config.Collection = key.MustString(config.Collection)
 		} else if name == "driver" {
 			config.Driver = key.MustString(config.Driver)
+		} else if name == "passwd" {
+			config.PassWd = key.MustString(config.PassWd)
 		} else {
 			gwlog.Panicf("section %s has unknown key: %s", sec.Name(), key.Name())
 		}
