@@ -20,9 +20,9 @@ import (
 	"path"
 
 	"github.com/go-ini/ini"
-	"github.com/pkg/errors"
 	"github.com/lovelly/goworld/engine/consts"
 	"github.com/lovelly/goworld/engine/gwlog"
+	"github.com/pkg/errors"
 )
 
 const (
@@ -99,7 +99,7 @@ type StorageConfig struct {
 	Type      string // Type of storage (filesystem, mongodb, redis, mysql)
 	Directory string // Directory of filesystem storage (filesystem)
 	Url       string // Connection URL (mongodb, redis, mysql)
-	PassWd  string
+	PassWd    string
 	DB        string // Database name (mongodb, redis)
 	Driver    string // SQL Driver name (mysql)
 }
@@ -108,7 +108,7 @@ type StorageConfig struct {
 type KVDBConfig struct {
 	Type       string
 	Url        string // MongoDB
-	PassWd 		string
+	PassWd     string
 	DB         string // MongoDB
 	Collection string // MongoDB
 	Driver     string // SQL Driver: e.x. mysql
